@@ -27,12 +27,12 @@ We designed this system with the following goals:
 | Model               | Accuracy | Remarks                                                                 |
 |--------------------|----------|-------------------------------------------------------------------------|
 | CNN                | **95.56%** | Selected for high accuracy and automatic feature extraction             |
-| Random Forest      | 89%      | Required manual image preprocessing and feature flattening              |
-| SVM                | 87%      | Performed poorly due to non-linear image features                       |
-| Naive Bayes        | 80%      | Struggled with high-dimensional image data                              |
+| Random Forest      | 92%      | Required manual image preprocessing and feature flattening              |
+| SVM                | 91%      | Performed poorly due to non-linear image features                       |
+| Naive Bayes        | 89%      | Struggled with high-dimensional image data                              |
 
 ### ✅ Why CNN for ECG Images?
-ECG signals are visual time-series data embedded with subtle waveform patterns. Traditional ML models require hand-crafted feature extraction, which can miss crucial spatial patterns. CNNs learn these patterns automatically and efficiently.
+ECG signals are waveform patterns. Traditional ML models require hand-crafted feature extraction, which can miss crucial spatial patterns. CNNs learn these patterns automatically and efficiently.
 
 ---
 
@@ -127,4 +127,30 @@ Random Forest is an ensemble learning method that builds multiple decision trees
 - **Final Accuracy**: 94%
 - Compared models: XGBoost (92%), SVM (90%), KNN (89%)
 - Random Forest selected for **generalization, speed, and medical interpretability**
+
+---
+## 🔧 How to Run the Project (Flask App)
+
+To run this Flask-based cardiovascular disease detection project, follow these steps:
+
+### 1. Clone the Repository  
+Open your terminal or command prompt and run the following commands to clone the repository and move into the project directory:  
+
+```bash
+git clone (https://github.com/simrabhombal/Cardio-App.git)
+```
+### 2. Install the Required Dependencies
+Make sure Python (preferably 3.7 or higher) and pip are installed on your system. Then install the required Python packages
+
+### 3. Run the Flask Application
+Once dependencies are installed, start the Flask development server by running:
+```bash
+python manage.py
+```
+You should see the output like this : 
+Running on http://127.0.0.1:5000/
+
+### Project Video:
+https://www.youtube.com/watch?v=hAqDUL6PYCc
+
 
